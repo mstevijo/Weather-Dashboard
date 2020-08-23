@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+        <div class="col-4 bg-light">
+            <p class="search-header my-1">Search for a city</p>
+        <div class="input-group mb-3">
+            <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="search-button">
+             <i class="fas fa-search"></i>
+            </button>
+     </div>
+
+    </div>
+    <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+    <form id="history"></form>
+    </div>  
+
+    <div class="current-weather-forcast">
+        <div class="city-name"> </div>
+        
+        <div class="temp-containter">Tempurature: <div class="tempurature"> </div></div>
+        <div class="humidity-container">Humidity: <div class="humidity"> </div></div>
+        <div class="wind-container">Wind Speed: <div class="wind"> </div> </div>
+        <div class ="uv-container">UV Index: <div class="uv"> </div></div>
+        </div>
+
+    <div class="row col-md-12" id="5-day-forcast"> 
+        <h1> 5 Day Forcast</h1>
+        
+    </div>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
